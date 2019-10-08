@@ -1,0 +1,350 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+
+/* Add a black background color to the top navigation */
+@font-face{
+	font-family: 'Neptune';
+	src: url("font/NeptuneTrial-Bold.woff");
+
+}
+@font-face{
+	font-family: 'Ultra';
+	src: url("font/ultra/Ultra.woff") format("woff"),
+		url("font/ultra/Ultra.ttf") format("truetype"),
+		url("font/ultra/Ultra.svg#svgUltra") format("svg");
+}
+html{
+	background-color: black;
+}
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display: inline-block;
+  float: left;
+  color: #A10002;
+  text-align: center;
+  padding: 7px 20px;
+  font-size: 20px;
+/*  font-family: 'Josefin Sans', sans-serif;*/
+	font-family: 'Neptune';
+  font-weight: 600;
+  text-decoration:underline;
+}
+
+/*
+.topnav a ::after{
+	content: '';
+	background-image: url("../images/pointinghand.png");
+  background-position: bottom;
+  background-size: 20%;
+  background-repeat: no-repeat;
+	display: block;
+}
+*/
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: transparent;
+  color: #A10002;
+  text-decoration: none;
+  display: inline-block;
+/*  border:2px solid #A10002;*/
+/*  border-radius: 5px;*/
+  box-shadow: inset 0 0 0.5rem #A10002;
+
+		
+}
+
+.Bigtitle::after{
+  content: "GRIDS";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  clip: rect(0,900px,0,0);
+  background-color: white;
+  color: #A10002;
+  animation: glitch 3s infinite alternate-reverse;
+  animation-delay: 0.5s;
+}
+.Bigtitle::before{
+
+  content: "GRIDS";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  clip: rect(0, 900px, 0, 0);
+  background-color: white;
+  color: #A10002;
+  animation: glitch 3s infinite alternate-reverse;
+  animation-delay: 0.5s;
+}
+
+
+@keyframes glitch {
+  0% {
+    clip: rect(8px, 9999px, 77px, 0);
+  }
+  5% {
+    clip: rect(19px, 9999px, 62px, 0);
+  }
+  10% {
+    clip: rect(61px, 9999px, 118px, 0);
+  }
+  15% {
+    clip: rect(96px, 9999px, 6px, 0);
+  }
+  20% {
+    clip: rect(65px, 9999px, 129px, 0);
+  }
+  25% {
+    clip: rect(33px, 9999px, 61px, 0);
+  }
+  30% {
+    clip: rect(87px, 9999px, 50px, 0);
+  }
+  35% {
+    clip: rect(96px, 9999px, 112px, 0);
+  }
+  40% {
+    clip: rect(51px, 9999px, 69px, 0);
+  }
+  45% {
+    clip: rect(97px, 9999px, 86px, 0);
+  }
+  50% {
+    clip: rect(78px, 9999px, 52px, 0);
+  }
+  55% {
+    clip: rect(59px, 9999px, 45px, 0);
+  }
+  60% {
+    clip: rect(30px, 9999px, 82px, 0);
+  }
+  65% {
+    clip: rect(35px, 9999px, 101px, 0);
+  }
+  70% {
+    clip: rect(38px, 9999px, 128px, 0);
+  }
+  75% {
+    clip: rect(60px, 9999px, 92px, 0);
+  }
+  80% {
+    clip: rect(78px, 9999px, 58px, 0);
+  }
+  85% {
+    clip: rect(25px, 9999px, 94px, 0);
+  }
+  90% {
+    clip: rect(10px, 9999px, 107px, 0);
+  }
+  95% {
+    clip: rect(30px, 9999px, 85px, 0);
+  }
+  100% {
+    clip: rect(93px, 9999px, 96px, 0);
+  }
+}
+
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1 {
+  font-family: 'Oswald', sans-serif;
+  margin-top: 0;
+  margin-bottom: 2rem;
+   }
+h2{
+  font-family: 'EB Garamond', serif;
+}
+h1 { line-height: 1.2;  letter-spacing: 0rem;}
+h2 { font-family:'Josefin Sans', sans-serif; line-height: 1.25; letter-spacing: 0rem;  }
+h3 { font-family:'Merriweather', serif;font-size: 3.0rem; line-height: 1.3;  letter-spacing: 0rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: 0rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: 00rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+}
+
+p {
+  margin-top: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;}
+
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #1EAEDB; }
+a:hover {
+  color: #0FA0CE; }
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float:left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: 52%; }
+
+}
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+body {
+  font-size: 2em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+
+  color: #222;}
+
+
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

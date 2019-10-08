@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Application</title>
+<link rel="icon" type="image/png" href="images/icon.png">
+
+</head>
+
+<body>
+	<style>
+		/* Style inputs with type="text", select elements and textareas */
+	body{
+	background-image: url("images/background.png");
+	background-size: cover;
+		height: 100%;
+  /* Center and scale the image nicely */
+  	background-position: center;
+	
+	}
+		
+	input[type=text], select, textarea {
+	  width: 100%; /* Full width */
+	  padding: 12px; /* Some padding */ 
+	  border: 1px solid #ccc; /* Gray border */
+	  border-radius: 4px; /* Rounded borders */
+	  box-sizing: border-box; /* Make sure that padding and width stays in place */
+	  margin-top: 6px; /* Add a top margin */
+	  margin-bottom: 16px; /* Bottom margin */
+	  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+	}
+
+	/* Style the submit button with a specific background color etc */
+	input[type=submit] {
+	  background-color: #880002;
+	  color: rgba;
+	  border-radius: 4px;
+	  cursor: pointer; 
+	  display: block;
+	  width: 100%;
+	  padding: 14px 28px;
+	  font-size: 16px;
+	  cursor: pointer;
+	  text-align: center;
+	}
+
+	/* When moving the mouse over the submit button, add a darker green color */
+	input[type=submit]:hover {
+	  background-color: rgba(91,91,91,0.56);
+	}
+
+	input[type=cancle] {
+	  background-color: #000000;
+	  color: white;
+	  border-radius: 4px;
+	  cursor: pointer; 
+	  display: block;
+	  width: 100%;
+	  padding: 14px 28px;
+	  font-size: 16px;
+	  cursor: pointer;
+	  text-align: center;
+	  text-decoration: none;
+	}
+
+	/* When moving the mouse over the submit button, add a darker green color */
+	input[type=cancle]:hover {
+	  background-color: rgba(229,229,229,0.1);
+	 color:black;
+	  text-decoration: none;
+	}
+	/* Add a background color and some padding around the form */
+	.container {
+	  border-radius: 5px;
+	  background-color: rgba(255,255,255,0.00);
+		
+		padding: 20px;}
+		.link{
+			text-decoration: none;
+		}
+}</style>
+	
+	<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Sponge">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Bob">
+
+	  <label for="lname">Contact Number</label>
+    <input type="text" id="number" name="lastname" placeholder="">
+	  
+	   <label for="lname">Date</label>
+    <input type="text" id="date" name="date" placeholder="20/7/1969">
+	  
+	  <label for="lname">Time</label>
+    <input type="text" id="time" name="time" placeholder="15:30..">
+	  
+	  <label for="lname">Address</label>
+    <input type="text" id="address" name="address" placeholder="222, Becker Str, London">
+	  
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="new zealand">New Zealand</option>
+    </select>
+
+    <label for="note">Note</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+	  
+    <a class="link" href="Thanks.html"> 
+		<input type="submit" value="Submit">
+	</a>
+   
+	<a class="link" href="index.html">
+		<input type="cancle" value="Cancle">
+	</a>
+  </form>
+</div>
+</body>
+</html>
